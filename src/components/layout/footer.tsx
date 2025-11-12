@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-secondary-foreground/10 pt-8 text-center text-sm text-secondary-foreground/60">
-          © {new Date().getFullYear()} Elevate Agency. All rights reserved.
+          © {new Date().getFullYear()} Hypead Agency. All rights reserved.
         </div>
       </div>
     </footer>

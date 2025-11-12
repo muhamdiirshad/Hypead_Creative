@@ -31,16 +31,34 @@ export default function ContactSection() {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
-    // Mock API submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(data);
-    toast({
-      title: 'Message Sent!',
-      description: "Thanks for reaching out. We'll get back to you shortly.",
+const onSubmit = async (data: FormData) => {
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
     });
+
+    const result = await res.json();
+
+    if (!res.ok) throw new Error(result.error || "Something went wrong");
+
+    toast({
+      title: "Message Sent!",
+      description: "Thanks for reaching out. We've also sent a confirmation email.",
+    });
+
     form.reset();
-  };
+  } catch (err: any) {
+    toast({
+      title: "Error",
+      description: err.message || "Failed to send message.",
+      variant: "destructive",
+    });
+  }
+};
+
+
 
   return (
     <section id="contact" className="bg-background">
@@ -50,7 +68,7 @@ export default function ContactSection() {
             Let's Build Something Great
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-accent/80">
-            Have a project in mind? We'd love to hear from you.
+            Have a somthing in mind? We'd love to hear from you.
           </p>
         </div>
         <div className="mt-12 grid gap-12 lg:grid-cols-2">
@@ -61,7 +79,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent">Our Office</h3>
-                <p className="text-muted-foreground">123 Growth Ave, Innovation City, 12345</p>
+                <p className="text-muted-foreground">Kannur, Kerala</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -70,7 +88,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent">Email Us</h3>
-                <p className="text-muted-foreground">hello@elevate.agency</p>
+                <p className="text-muted-foreground">irshadibrahim524@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -93,7 +111,7 @@ export default function ContactSection() {
                     <FormItem>
                       <FormLabel>Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="Enter Your Name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -119,7 +137,7 @@ export default function ContactSection() {
                     <FormItem>
                       <FormLabel>Your Message</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Tell us about your project..." {...field} rows={5} />
+                        <Textarea placeholder="Tell us how can i help you." {...field} rows={5} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

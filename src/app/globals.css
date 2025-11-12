@@ -5,6 +5,55 @@
 body {
   font-family: 'PT Sans', sans-serif;
 }
+header {
+  opacity: 0.7;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+header:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth slide-in for navbar content */
+header .container {
+  transition: all 0.7s ease-in-out;
+}
+
+/* Navbar hover background color change */
+header:hover .container {
+  background-color: hsl(var(--background) / 0.9);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade and slide-in animations for mobile menu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.35s ease-in-out;
+}
 
 @layer base {
   :root {
