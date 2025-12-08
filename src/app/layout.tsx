@@ -6,7 +6,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Hyped Creative - Digital Marketing Agency',
+  title: 'Hypead Creative - Digital Marketing Agency',
   description: 'Premium digital marketing agency portfolio website.',
 };
 

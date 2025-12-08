@@ -53,7 +53,7 @@ export async function POST(request) {
       "https://res.cloudinary.com/dujnfohmk/image/upload/v1762940005/Gemini_Generated_Image_prjfs8prjfs8prjf_oxflzs.png"; // fallback image
 
     const autoReplyMailOptions = {
-      from: `"HYPED CREATIVITY" <${process.env.EMAIL_USER}>`,
+      from: `"HYPEAD CREATIVE" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Thanks for reaching out! 🌟",
       html: `
@@ -62,8 +62,8 @@ export async function POST(request) {
             
             <!-- HEADER -->
             <div style="background: #132f34; color: white; text-align: center; padding: 25px;">
-              <img src="${logoUrl}" alt="HYPED CREATIVITY Logo" style="width: 100px; margin-bottom: 10px;" />
-              <h2 style="margin: 0;">HYPED CREATIVITY</h2>
+              <img src="${logoUrl}" alt="HYPEAD CREATIVE Logo" style="width: 100px; margin-bottom: 10px;" />
+              <h2 style="margin: 0;">HYPEAD CREATIVE</h2>
             </div>
 
             <!-- BODY -->
@@ -74,7 +74,7 @@ export async function POST(request) {
               <p>We truly appreciate your interest and look forward to connecting with you soon.</p>
 
               <p style="margin-top: 20px;">Best regards,</p>
-              <p><strong>HYPED CREATIVITY Team</strong><br/>
+              <p><strong>HYPEAD CREATIVE Team</strong><br/>
               Kannur, Kerala<br/>
               <a href="mailto:${process.env.EMAIL_USER}" style="color: #132f34; text-decoration: none;">${process.env.EMAIL_USER}</a></p>
             </div>
@@ -84,10 +84,10 @@ export async function POST(request) {
               <p>Follow us on:</p>
               <p>
                 <a href="https://linkedin.com/company/hypedcreativity" style="margin: 0 8px; color: #132f34; text-decoration: none;">LinkedIn</a> |
-                <a href="https://instagram.com/hypedcreativity" style="margin: 0 8px; color: #132f34; text-decoration: none;">Instagram</a> |
+                <a href="https://www.instagram.com/hypead.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="margin: 0 8px; color: #132f34; text-decoration: none;">Instagram</a> |
                 <a href="https://hypedcreativity.com" style="margin: 0 8px; color: #132f34; text-decoration: none;">Website</a>
               </p>
-              <p>© ${new Date().getFullYear()} HYPED CREATIVITY. All rights reserved.</p>
+              <p>© ${new Date().getFullYear()} HYPEAD CREATIVE. All rights reserved.</p>
             </div>
           </div>
         </div>
