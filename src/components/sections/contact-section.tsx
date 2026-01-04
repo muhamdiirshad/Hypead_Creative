@@ -97,7 +97,7 @@ const onSubmit = async (data: FormData) => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent">Call Us</h3>
-                <p className="text-muted-foreground">+91 6238465247</p>
+                <p className="text-muted-foreground">+91 79078 28308</p>
               </div>
             </div>
           </div>
