@@ -4,6 +4,8 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import WhatsAppFloat from '@/components/ui/whatsapp-float'
+
 
 export const metadata: Metadata = {
   title: 'Hypead Creative - Digital Marketing Agency',
@@ -31,10 +33,11 @@ export default function RootLayout({
         )}
       >
         <div className="relative flex min-h-dvh flex-col bg-background">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+    <Header />
+    <main className="flex-1">{children}</main>
+    <Footer />
+  </div>
+        <WhatsAppFloat />
         <Toaster />
       </body>
     </html>
