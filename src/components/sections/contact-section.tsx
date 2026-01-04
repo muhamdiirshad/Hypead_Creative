@@ -68,7 +68,7 @@ const onSubmit = async (data: FormData) => {
             Let's Build Something Great
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-accent/80">
-            Have a somthing in mind? We'd love to hear from you.
+            Have a somthing in mind? We'd love to hear from you
           </p>
         </div>
         <div className="mt-12 grid gap-12 lg:grid-cols-2">
@@ -88,7 +88,7 @@ const onSubmit = async (data: FormData) => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent">Email Us</h3>
-                <p className="text-muted-foreground">irshadibrahim524@gmail.com</p>
+                <p className="text-muted-foreground">hypead.creative@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -97,7 +97,7 @@ const onSubmit = async (data: FormData) => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent">Call Us</h3>
-                <p className="text-muted-foreground">+91 79078 28308</p>
+                <p className="text-muted-foreground"> +91 7907828308</p>
               </div>
             </div>
           </div>

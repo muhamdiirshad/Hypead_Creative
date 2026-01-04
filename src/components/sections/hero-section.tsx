@@ -35,9 +35,14 @@ export default function HeroSection() {
                 Start Your Project <ArrowRight className="ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="bg-transparent border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
               <Link href="#services">Our Services</Link>
             </Button>
+
           </div>
         </div>
       </div>

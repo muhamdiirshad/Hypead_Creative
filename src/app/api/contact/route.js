@@ -83,7 +83,7 @@ export async function POST(request) {
             <div style="background: #f1f3f4; text-align: center; padding: 15px; font-size: 0.9em; color: #555;">
               <p>Follow us on:</p>
               <p>
-                <a href="https://linkedin.com/company/hypedcreativity" style="margin: 0 8px; color: #132f34; text-decoration: none;">LinkedIn</a> |
+                <a href="https://www.linkedin.com/in/hype-ad-21a64b3a2/" style="margin: 0 8px; color: #132f34; text-decoration: none;">LinkedIn</a> |
                 <a href="https://www.instagram.com/hypead.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="margin: 0 8px; color: #132f34; text-decoration: none;">Instagram</a> |
                 <a href="https://hypedcreativity.com" style="margin: 0 8px; color: #132f34; text-decoration: none;">Website</a>
               </p>

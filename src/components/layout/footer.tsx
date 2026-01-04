@@ -3,9 +3,9 @@ import { Twitter, Linkedin, Instagram } from 'lucide-react';
 import Logo from '@/components/logo';
 
 const socialLinks = [
-  { icon: Twitter, href: '#' },
-  { icon: Linkedin, href: '#' },
-  { icon: Instagram, href: '#' },
+  // { icon: Twitter, href: '#' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/hype-ad-21a64b3a2/' },
+  { icon: Instagram, href: 'https://www.instagram.com/hypead.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' },
 ];
 
 export default function Footer() {
